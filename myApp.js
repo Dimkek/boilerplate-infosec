@@ -1,12 +1,7 @@
 const express = require('express');
-const helmet = require('helmet');  // Додаємо Helmet для безпеки
-
 const app = express();
-
-app.use(helmet());  // Використовуємо Helmet як middleware
-
-module.exports = app;
-
+const helmet = require('helmet');  // Імпорт Helmet
+app.use(helmet());  // Використання Helmet як middleware
 
 
 
